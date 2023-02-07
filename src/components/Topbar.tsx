@@ -44,7 +44,7 @@ export default function Topbar(){
     }
 
     return(
-        <div className={`fixed w-full h-16 bg-${topbarColor} bg-opacity-${opacity} md:bg-gradient-to-t md:from-[#141414] md:to-black pl-[4%] pr-[4%]`}>
+        <div className={`z-50 fixed w-full h-16 bg-${topbarColor} bg-opacity-${opacity} md:bg-gradient-to-t md:from-[#141414] md:to-black pl-[4%] pr-[4%]`}>
             <div className="flex h-full items-center justify-between">
             
                 <div className="flex items-center">
