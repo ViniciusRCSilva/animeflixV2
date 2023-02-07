@@ -33,7 +33,7 @@ export default function MenuAccount(){
             <MenuList 
                 onMouseEnter={onOpen} 
                 onMouseLeave={onClose}
-                className="bg-black bg-opacity-50 border-[1px] border-[#b3b3b3] border-opacity-50 text-sm w-56"
+                className="bg-black bg-opacity-90 border-[1px] border-[#b3b3b3] border-opacity-50 text-sm w-56"
             >
 
                 <div className="mb-3 p-2">

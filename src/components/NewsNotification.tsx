@@ -55,7 +55,7 @@ export default function NewsNotification(){
             <MenuList 
                 onMouseEnter={onOpen} 
                 onMouseLeave={onClose}
-                className="bg-black bg-opacity-50 border-[1px] border-[#b3b3b3] border-opacity-50 text-sm"
+                className="bg-black bg-opacity-90 border-[1px] border-[#b3b3b3] border-opacity-50 text-sm"
             >
 
                 <div className="">
