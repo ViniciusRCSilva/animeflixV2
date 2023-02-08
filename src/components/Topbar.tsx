@@ -44,11 +44,11 @@ export default function Topbar(){
     }
 
     return(
-        <div className={`z-50 fixed w-full h-16 bg-${topbarColor} bg-opacity-${opacity} md:bg-gradient-to-t md:from-[#141414] md:to-black pl-[4%] pr-[4%]`}>
+        <div className={`z-50 fixed w-full h-16 bg-${topbarColor} bg-opacity-${opacity} lg:bg-gradient-to-t lg:from-[#141414] lg:to-black pl-[4%] pr-[4%]`}>
             <div className="flex h-full items-center justify-between">
             
                 <div className="flex items-center">
-                    <div className="flex md:hidden mr-5">
+                    <div className="flex lg:hidden mr-5">
                         <Menu>
                             <MenuButton onMouseEnter={handleClickTopbarColor} onMouseLeave={handleOutTopbarColor}>
                                 <List className='text-white w-8 h-8' />
@@ -101,7 +101,7 @@ export default function Topbar(){
                         <Image src={logo} width={120} height={120} alt="logo" />
                     </div>
 
-                    <div className="hidden md:flex">
+                    <div className="hidden lg:flex">
                         <Link name="Início" link="" />
                         <Link name="Séries" link="" />
                         <Link name="Filmes" link="" />
@@ -110,7 +110,7 @@ export default function Topbar(){
                     </div>
                 </div>
 
-                <div className="flex md:hidden w-[6em] border-[1px] border-[#b3b3b3]">
+                <div className="flex lg:hidden w-[6em] border-[1px] border-[#b3b3b3]">
                     <input
                             type="text" 
                             placeholder="Buscar" 
@@ -118,7 +118,7 @@ export default function Topbar(){
                     />
                 </div>
 
-                <div className="hidden md:flex items-center text-white">
+                <div className="hidden lg:flex items-center text-white">
                     <div className="flex items-center mr-4 cursor-pointer" >
                         <MagnifyingGlass className="w-6 h-6" weight="bold" onClick={handleSearch} />
 
@@ -130,11 +130,11 @@ export default function Topbar(){
                     </div>
 
 
-                    <div className="hidden md:flex mr-4">
+                    <div className="hidden lg:flex mr-4">
                         <NewsNotification />
                     </div>
 
-                    <div className="hidden md:flex">
+                    <div className="hidden lg:flex">
                         <MenuAccount/>
                     </div>
                 </div>

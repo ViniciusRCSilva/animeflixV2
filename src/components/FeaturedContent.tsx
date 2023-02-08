@@ -11,7 +11,7 @@ export default function FeaturedContent({ description, logo, backgroundImage }: 
     return(
         <div 
             style={{backgroundImage: `url(${backgroundImage})`}} 
-            className={`hidden md:flex flex-col items-start p-[15%] shadow-image border-2 border-[#141414] w-full h-full rounded-b-3xl bg-cover bg-center`
+            className={`hidden lg:flex flex-col items-start p-[15%] shadow-image border-2 border-[#141414] w-full h-full rounded-b-3xl bg-cover bg-center`
         }>
             <div className="flex flex-col -ml-[15%] w-[36vw]">
                 <div>
