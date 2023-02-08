@@ -1,19 +1,26 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Info, Play } from "phosphor-react";
 
-import TitleLogo from '../../public/logo-dragon-ball-z.png'
+interface ContentProps{
+    description?: string
+    logo: StaticImageData
+    backgroundImage: string
+}
 
-export default function FeaturedContent(){
+export default function FeaturedContent({ description, logo, backgroundImage }: ContentProps){
     return(
-        <div className={`hidden md:flex items-center shadow-image border-2 border-[#141414] w-full h-[800px] rounded-b-3xl bg-featuredContent bg-auto bg-center`}>
-            <div className="flex flex-col w-[36%] ml-[60px]">
+        <div 
+            style={{backgroundImage: `url(${backgroundImage})`}} 
+            className={`hidden md:flex flex-col items-start p-[15%] shadow-image border-2 border-[#141414] w-full h-full rounded-b-3xl bg-cover bg-center`
+        }>
+            <div className="flex flex-col -ml-[15%] w-[36vw]">
                 <div>
                     <div className="mb-[1.2vw]">
-                        <Image src={TitleLogo} alt="Logo Título" width={550} height={224} />
+                        <Image src={logo} alt="Logo Título" width={550} height={224} />
                     </div>
 
                     <div className="font-[500] text-[1.2rem] text-white mb-[0.5vw]">
-                        Cinco anos após vencer o Torneio Mundial de Artes Marciais, Goku tem uma vida pacífica com sua esposa e filho. No entanto, isso muda com a chegada de um misterioso inimigo....
+                        {description}
                     </div>
 
                     <div className="flex items-center mt-[1.5vw] text-[1.6rem] font-semibold text-white">
