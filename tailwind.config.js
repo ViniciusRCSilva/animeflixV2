@@ -13,6 +13,12 @@ module.exports = {
       backgroundColor: {
         "background": "#141414",
         "red-netflix": "#E50914"
+      },
+      backgroundImage: {
+        'featuredContent': `url('../../public/dbz.jpg')`,
+      },
+      boxShadow: {
+        'image': 'inset 0 0 200px #141414',
       }
     },
   },
