@@ -5,7 +5,7 @@ import Router from "next/router";
 import Image from "next/image";
 
 import logo from '../../public/animeflix_logo.png'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MenuAccount from "./MenuAccount";
 import NewsNotification from "./NewsNotification";
 
@@ -42,6 +42,10 @@ export default function Topbar(){
         setTopbarColor("background")
         setOpacity(50)
     }
+
+    useEffect(() => {
+
+    }, [])
 
     return(
         <div className={`z-50 fixed w-full h-16 bg-${topbarColor} bg-opacity-${opacity} lg:bg-gradient-to-t lg:from-[#141414] lg:to-black pl-[4%] pr-[4%]`}>
@@ -114,7 +118,7 @@ export default function Topbar(){
                     <input
                             type="text" 
                             placeholder="Buscar" 
-                            className={'bg-transparent outline-none text-white p-2 placeholder:text-sm'}
+                            className={'bg-background bg-opacity-80 w-[5em] outline-none text-white p-2 placeholder:text-sm'}
                     />
                 </div>
 
