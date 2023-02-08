@@ -14,11 +14,8 @@ module.exports = {
         "background": "#141414",
         "red-netflix": "#E50914"
       },
-      backgroundImage: {
-        'featuredContent': `url('../../public/dbz.jpg')`,
-      },
       boxShadow: {
-        'image': 'inset 0 0 200px #141414',
+        'image': 'inset 0 0 100px 50px #141414',
       }
     },
   },
