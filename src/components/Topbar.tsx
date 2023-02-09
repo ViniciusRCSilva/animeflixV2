@@ -58,11 +58,11 @@ export default function Topbar(){
                                 <List className='text-white w-8 h-8' />
                             </MenuButton>
                             <MenuList 
-                                className='w-64 h-screen bg-black text-[#808080] font-bold -ml-4'
+                                className='w-64 h-screen bg-black text-[#808080] font-bold -ml-4 overflow-scroll'
                                 onClick={handleClickTopbarColor}
                                 onMouseLeave={handleOutTopbarColor}
                             >
-                                <div className='pt-3 pb-3 pl-5'>
+                                <div className='pt-4 pb-3 pl-4'>
                                     <MenuItem className='mb-3'>
                                         <div className="flex justify-center items-center bg-green-600 w-8 h-8 mr-3" />
                                         <div className='flex flex-col justify-start'>
@@ -77,7 +77,7 @@ export default function Topbar(){
 
                                 <div className="flex w-full h-[1px] bg-[#b3b3b3] border-opacity-50" />
 
-                                <div className="pt-3 pb-3 pl-5">
+                                <div className="pt-4 pb-3 pl-4">
                                     <MenuItem className='mb-3 h-4'>
                                         Início
                                     </MenuItem>
@@ -92,6 +92,24 @@ export default function Topbar(){
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
                                         Minha lista
+                                    </MenuItem>
+                                    <MenuItem className='mb-3 h-4'>
+                                        Ação
+                                    </MenuItem>
+                                    <MenuItem className='mb-3 h-4'>
+                                        Comédia
+                                    </MenuItem>
+                                    <MenuItem className='mb-3 h-4'>
+                                        Terror
+                                    </MenuItem>
+                                    <MenuItem className='mb-3 h-4'>
+                                        Música e musicais
+                                    </MenuItem>
+                                    <MenuItem className='mb-3 h-4'>
+                                        Romance
+                                    </MenuItem>
+                                    <MenuItem className='mb-3 h-4'>
+                                        Dramas
                                     </MenuItem>
                                 </div>
                             </MenuList>
