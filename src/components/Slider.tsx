@@ -1,5 +1,4 @@
 import { useKeenSlider } from "keen-slider/react"
-import { useEffect, useState } from "react"
 
 interface SliderProps{
     title: string
@@ -17,10 +16,10 @@ export default function Slider({ title, children }: SliderProps){
     })
 
     const [refMobile] = useKeenSlider<HTMLDivElement>({
-        loop: true,
+        loop: false,
         mode: "snap",
         slides: {
-          perView: 1,
+          perView: 2,
           spacing: 0,
         },
     })
@@ -35,7 +34,7 @@ export default function Slider({ title, children }: SliderProps){
             </div>
 
             <div className="flex lg:hidden flex-col justify-center px-[4%] pb-[80px]">
-                <p className="text-[1.2em] font-bold text-[#999]">{title}</p> 
+                <p className="text-[1.2em] mb-[.5em] font-bold text-[#999]">{title}</p> 
                 <div ref={refMobile} className="flex w-full keen-slider">
                     {children}
                 </div>
