@@ -118,7 +118,7 @@ export default function Topbar(){
                     <input
                             type="text" 
                             placeholder="Buscar" 
-                            className={'bg-background bg-opacity-80 w-[5em] outline-none text-white p-2 placeholder:text-sm'}
+                            className={'bg-background bg-opacity-80 w-[5.85em] outline-none text-white p-2 placeholder:text-sm'}
                     />
                 </div>
 
