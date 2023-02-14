@@ -10,7 +10,7 @@ function logoLink(){
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full overflow-x-hidden">
+    <div className="flex flex-col w-full overflow-x-hidden animate-screenOpacity">
       <FeaturedContent logo={logoLink()} backgroundImage='https://i.pinimg.com/originals/d8/fc/f9/d8fcf96a55264b304b8046f8cfc7b472.jpg' />
 
       <AnimeSliders/>
