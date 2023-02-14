@@ -16,6 +16,15 @@ module.exports = {
       },
       boxShadow: {
         'image': 'inset 0 0 100px 50px #141414',
+      },
+      keyframes: {
+        screenOpacity: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '100' },
+        }
+      },
+      animation: {
+        screenOpacity: 'screenOpacity 1s ease-in-out',
       }
     },
   },
