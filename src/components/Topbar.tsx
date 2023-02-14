@@ -17,6 +17,7 @@ import {
 } from '@chakra-ui/react'
 
 import { List } from 'phosphor-react'
+import LinkMobile from "./LinkTopbarMobile";
 
 export default function Topbar(){
     const [search, setSearch] = useState('hidden')
@@ -48,7 +49,7 @@ export default function Topbar(){
     }, [])
 
     return(
-        <div className={`z-50 fixed w-full h-16 bg-${topbarColor} bg-opacity-${opacity} lg:bg-gradient-to-t lg:from-[#141414] lg:to-black pl-[4%] pr-[4%]`}>
+        <div className={`z-50 fixed w-full h-16 bg-${topbarColor} bg-opacity-${opacity} lg:bg-gradient-to-t lg:from-[#141414] lg:to-black px-[4%]`}>
             <div className="flex h-full items-center justify-between">
             
                 <div className="flex items-center">
@@ -79,37 +80,37 @@ export default function Topbar(){
 
                                 <div className="pt-4 pb-3 pl-4">
                                     <MenuItem className='mb-3 h-4'>
-                                        Início
+                                        <LinkMobile name="Início" link="" />
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Séries
+                                        <LinkMobile name="Séries" link="series" />
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Filmes
+                                        <LinkMobile name="Filmes" link="movies" /> 
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Bombando
+                                        <LinkMobile name="Bombando" link="popular" />  
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Minha lista
+                                        <LinkMobile name="Minha lista" link="myList" />
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Ação
+                                        <LinkMobile name="Ação" link="" />
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Comédia
+                                        <LinkMobile name="Comédia" link="" />
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Terror
+                                        <LinkMobile name="Terror" link="" />
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Música e musicais
+                                        <LinkMobile name="Música e musicais" link="" />
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Romance
+                                        <LinkMobile name="Romance" link="" />
                                     </MenuItem>
                                     <MenuItem className='mb-3 h-4'>
-                                        Dramas
+                                        <LinkMobile name="Dramas" link="" />
                                     </MenuItem>
                                 </div>
                             </MenuList>
@@ -125,10 +126,10 @@ export default function Topbar(){
 
                     <div className="hidden lg:flex">
                         <Link name="Início" link="" />
-                        <Link name="Séries" link="" />
-                        <Link name="Filmes" link="" />
-                        <Link name="Bombando" link="" />
-                        <Link name="Minha lista" link="" />
+                        <Link name="Séries" link="series" />
+                        <Link name="Filmes" link="movies" />
+                        <Link name="Bombando" link="popular" />
+                        <Link name="Minha lista" link="myList" />
                     </div>
                 </div>
 
