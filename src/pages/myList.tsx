@@ -7,7 +7,7 @@ export default function Popular() {
             <p className="hidden lg:flex text-[2.5rem] h-16">Minha lista</p>
 
             <div className="hidden lg:flex w-full h-full justify-center pt-[100px] text-[#666] text-lg">
-                <p>Você ainda não adicionou nunhum título à sua lista.</p>
+                <p>Você ainda não adicionou nenhum título à sua lista.</p>
             </div>
 
             <div className="lg:hidden flex text-[#999] text-[1.2em] font-bold mb-[.5em]">
