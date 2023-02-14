@@ -3,7 +3,7 @@ import { Info, Play } from "phosphor-react";
 
 interface ContentProps{
     description?: string
-    logo: StaticImageData
+    logo: string
     backgroundImage: string
 }
 
@@ -16,7 +16,7 @@ export default function FeaturedContent({ description, logo, backgroundImage }: 
             <div className="flex flex-col -ml-[15%] w-[36vw]">
                 <div>
                     <div className="mb-[1.2vw]">
-                        <Image src={logo} alt="Logo Título" width={550} height={224} />
+                        <div style={{backgroundImage: `url(${logo})`}} className="bg-center bg-cover w-[550px] h-[224px]" />
                     </div>
 
                     <div className="font-[500] text-[1.2rem] text-white mb-[0.5vw]">
