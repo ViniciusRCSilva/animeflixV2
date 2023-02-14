@@ -10,8 +10,8 @@ function logoLink(){
 
 export default function Series() {
   return (
-    <div className="flex flex-col w-full overflow-x-hidden">
-      <FeaturedContent logo={logoLink()} backgroundImage='https://i.pinimg.com/originals/d8/fc/f9/d8fcf96a55264b304b8046f8cfc7b472.jpg' />
+    <div className="flex flex-col w-full overflow-x-hidden animate-screenOpacity">
+      <FeaturedContent logo={logoLink()} backgroundImage='https://wallpaper.dog/large/20498650.jpg' />
 
       <AnimeSliders/>
 
