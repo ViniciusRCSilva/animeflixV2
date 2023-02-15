@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/* import { useEffect, useState } from "react"; */
 import AnimeContainer from "./AnimeContainer";
 import Slider from "./Slider";
 
@@ -11,12 +11,16 @@ const AnimeImages = [
   {image: "https://coolthemestores.com/wp-content/uploads/2023/01/vinland-saga-wallpaper-background.jpg"},
 ]
 
+/* type Image = {
+  image: string
+}[] */
+
 export default function AnimeSliders(){
-/*   const [randomArray, setRandomArray] = useState([]);
+/*   const [randomArray, setRandomArray] = useState<Image>([]);
     
   useEffect(() => {
-      const randomizeArray = [...AnimeImages].sort(() => 0.5 - Math.random());
-      setRandomArray(randomizeArray.slice(0, 3));
+    const randomizeArray = [...AnimeImages].sort(() => 0.5 - Math.random());
+    setRandomArray(randomizeArray.slice(0, 6));
   }, []); */
 
   return(
