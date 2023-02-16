@@ -24,7 +24,7 @@ module.exports = {
         }
       },
       animation: {
-        screenOpacity: 'screenOpacity 1s ease-in-out',
+        screenOpacity: 'screenOpacity 1.5s ease-in-out',
       }
     },
   },
