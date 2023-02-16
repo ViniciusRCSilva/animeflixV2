@@ -21,10 +21,15 @@ module.exports = {
         screenOpacity: {
           '0%': { opacity: '0' },
           '100%': { opacity: '100' },
+        },
+        containerOpacity: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '100' },
         }
       },
       animation: {
         screenOpacity: 'screenOpacity 1.5s ease-in-out',
+        containerOpacity: 'containerOpacity 300ms ease-in-out',
       }
     },
   },
