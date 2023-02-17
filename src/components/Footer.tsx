@@ -33,7 +33,8 @@ export default function Footer(){
 
                 <div>
                     <div className="mb-[14px] text-justify lg:text-left">
-                        <p>Este projeto tem apenas objetivo de desafiar as capacidades no desenvolvimento de uma interface semelhante à Netflix.</p>
+                        <p>Este projeto tem apenas objetivo de desafiar as capacidades no desenvolvimento de uma interface semelhante à 
+                        <a href="http://netflix.com/" target="_blank" className="underline"> Netflix.</a></p>
                         <p>Gostaria de frisar que não incentivo ou apoio qualquer atividade que viole direitos autorais, incluindo a criação de sites que distribuam filmes ou séries de forma gratuita na internet. Além de ser ilegal, essa prática prejudica a indústria do entretenimento e os artistas envolvidos na produção desses trabalhos. É importante valorizar e respeitar o trabalho desses profissionais, apoiando as formas legais e justas de consumir conteúdo audiovisual.</p>
                     </div>
                     <p>© 2023 AnimeFlix, Inc.</p>
