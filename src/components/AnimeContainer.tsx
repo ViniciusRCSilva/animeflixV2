@@ -31,7 +31,7 @@ export default function AnimeContainer({ image, className }: AnimeProps){
             className={`${className}`}
         >
             <div 
-                className="flex flex-col lg:rounded-md delay-300 lg:hover:scale-125 transition-all cursor-pointer translate-y-1 hover:-translate-y-28 group"
+                className="flex flex-col lg:rounded-md delay-300 lg:hover:scale-125 transition-all cursor-pointer lg:translate-y-1 lg:hover:-translate-y-28 group"
                 onMouseEnter={handleVisibilityFlex}
                 onMouseLeave={handleVisibilityHidden}
             >
